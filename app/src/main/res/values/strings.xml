@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BangGiaVe</string>
+    <string name="hint_taikhoan">Tai Khoan</string>
+    <string name="hint_matkhau">Mat Khau</string>
+    <string name="text_quenmatkhau">Quen Mat Khau</string>
+    <string name="text_taotaikhoan">Tao Tai Khoan</string>
+    <string name="text_dangnhap">Dang Nhap</string>
+    <string name="text_dangnhapfb">Dang nhap Facebook</string>
+    <string name="text_dangnhapmail">Dang nhap Gmail</string>
+
+</resources>

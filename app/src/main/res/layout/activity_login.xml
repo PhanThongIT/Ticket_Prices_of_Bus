@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.asus.formlogin.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageviewLogo"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher" />
+    <ImageButton
+        android:id="@+id/imagebuttonExit"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:src="@drawable/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edittextUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageviewLogo"
+        android:background="@drawable/custom_username"
+        android:hint="@string/hint_taikhoan" />
+
+    <EditText
+        android:id="@+id/edittextPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittextUser"
+        android:background="@drawable/custom_username"
+        android:hint="@string/hint_matkhau"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonCreateID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittextPass"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_createid"
+        android:text="@string/text_taotaikhoan"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#006fff" />
+
+    <Button
+        android:id="@+id/buttonForgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittextPass"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/buttonCreateID"
+        android:background="@drawable/custom_createid"
+        android:text="@string/text_quenmatkhau"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#006fff" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/buttonCreateID"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button_login"
+        android:text="@string/text_dangnhap"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/buttonLoginFB"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonLoginMail"
+        android:layout_alignStart="@+id/buttonLoginMail"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_button_loginfb"
+        android:text="@string/text_dangnhapfb"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#016bce" />
+
+    <Button
+        android:id="@+id/buttonLoginMail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLoginFB"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_button_loginmail"
+        android:text="@string/text_dangnhapmail"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#ff0707" />
+
+</RelativeLayout>
